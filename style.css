@@ -1,0 +1,72 @@
+@font-face {
+    font-family:'Chronicle';
+    src: url('fonts/Chronicle\ Display\ Black.otf') format('otf');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #0B1D26 !important;
+    font-family: 'Chronicle';
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+
+.hero-section{
+    /* background-image: url('last\ canva.png'); */
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), transparent), 
+    url('images/main\ bg.png') left/cover no-repeat;
+    height: 200vh;
+}
+.hero-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top,rgba(11, 29, 38, 0.9), transparent);
+  }
+
+.home-1{
+    margin-top: -300px;
+    z-index: 4;
+    position: relative;
+}
+.main-101 {
+    top: 0;
+    z-index: -7;
+    position: absolute;
+    left: 0;
+    font-size: 122px !important;
+    font-family: "Poppins", sans-serif;
+    opacity: 0.4;
+}
+.footer-section h5,h6,p{
+    font-family: "Poppons", sans-serif;
+}
+
+@media (max-width: 992px) {
+    .hamburger{
+        background-color: #35795575;
+    }
+}
+@media (max-width: 450px) {
+    .main-101 {
+        top: -66px;
+        left: 6px;
+        font-size: 122px !important;
+        opacity: 0.6;
+    }
+} 
